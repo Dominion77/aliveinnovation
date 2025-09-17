@@ -12,15 +12,15 @@ const ContactSection: React.FC = () => {
           <div className="contact-info">
             <div className="info-item">
               <h4>Email</h4>
-              <p>info@aliveinnovation.com</p>
+              <p>aliveinnovationtech@gmail.com</p>
             </div>
             <div className="info-item">
               <h4>Phone</h4>
-              <p>+1 (555) 123-4567</p>
+              <p>+234 816 442 4004</p>
             </div>
             <div className="info-item">
               <h4>Location</h4>
-              <p>San Francisco, CA</p>
+              <p>Lagos, Nigeria</p>
             </div>
           </div>
         </div>

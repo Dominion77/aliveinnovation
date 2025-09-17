@@ -24,10 +24,8 @@ const Header: React.FC<HeaderProps> = ({ menuItems, activeSection, onNavigationC
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <div className="logo-placeholder">
-            <span className="logo-text">Alive Innovation Tech</span>
-            <div className="glow-effect"></div>
-          </div>
+            <img src='./images/logo.jpg'></img>
+            {/* <div className="glow-effect"></div> */}
         </div>
         <nav className="navigation">
           <ul>

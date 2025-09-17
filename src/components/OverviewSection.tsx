@@ -10,16 +10,16 @@ const OverviewSection: React.FC = () => {
           <p>At Alive Innovation Tech, we specialize in creating digital experiences that transcend conventional limitations. Our multidisciplinary approach combines cutting-edge technology with human-centered design to deliver solutions that matter.</p>
           <div className="stats-container">
             <div className="stat">
-              <h3>150+</h3>
+              <h3>3+</h3>
               <p>Projects Completed</p>
             </div>
             <div className="stat">
-              <h3>40+</h3>
+              <h3>5+</h3>
               <p>Industry Experts</p>
             </div>
             <div className="stat">
-              <h3>12</h3>
-              <p>Global Awards</p>
+              <h3>35+</h3>
+              <p>Early Adopters</p>
             </div>
           </div>
         </div>

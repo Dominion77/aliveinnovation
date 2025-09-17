@@ -16,7 +16,7 @@ const App: React.FC = () => {
   const menuItems: MenuItem[] = [
     { id: 'overview', label: 'Overview' },
     { id: 'portfolio', label: 'Portfolio' },
-    { id: 'training', label: 'Training & Consultancy' },
+    { id: 'training', label: 'Mission Statement' },
     { id: 'partnerships', label: 'Partnerships' },
     { id: 'contact', label: 'Contact' }
   ];
@@ -25,23 +25,17 @@ const App: React.FC = () => {
     {
       id: 1,
       title: 'Alive Home',
-      description: 'Revolutionizing real estate with cutting-edge technology solutions.',
+      description: 'An AI-Powered real estate platform that links buyers and renters to realtors, property owners and developers.',
       category: 'real estate tech'
     },
     {
       id: 2,
-      title: 'Commerce Solutions',
-      description: 'Next-generation e-commerce platforms with AI-powered personalization.',
-      category: 'commerce'
-    },
-    {
-      id: 3,
       title: 'Workplace Tools',
       description: 'Productivity suites that transform how teams collaborate and innovate.',
       category: 'workplace'
     },
     {
-      id: 4,
+      id: 3,
       title: 'Digital Services',
       description: 'End-to-end digital transformation services for enterprises.',
       category: 'services'

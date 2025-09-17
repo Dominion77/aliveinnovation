@@ -66,6 +66,13 @@
   animation: float 20s infinite linear;
 }
 
+
+.logo img{
+   width: 4rem;
+   height: 4rem;
+   margin-left: 20px;
+}
+
 .particle-effect {
   position: absolute;
   top: 0;
@@ -109,6 +116,15 @@
   height: 50px;
   background: var(--gradient-cyan);
   margin-top: 0.5rem;
+}
+
+.text-content p{
+ font-size: 0.8rem;
+}
+
+.text-content h1{
+  margin-top: 15px;
+  font-size: 3.1rem;
 }
 
 @keyframes float {

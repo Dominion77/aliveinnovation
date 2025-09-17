@@ -8,7 +8,7 @@ const PartnershipsSection: React.FC = () => {
         <h2>Strategic Partnerships</h2>
         <p className="section-description">Collaborating with industry leaders to drive innovation forward</p>
         
-        <div className="partners-grid">
+        {/* <div className="partners-grid">
           {[1, 2, 3, 4, 5, 6].map(item => (
             <div key={item} className="partner-logo">
               <div className="logo-placeholder">
@@ -16,7 +16,7 @@ const PartnershipsSection: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         
         <div className="partnership-cta">
           <h3>Interested in partnering with us?</h3>
