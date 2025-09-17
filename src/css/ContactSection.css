@@ -1,0 +1,55 @@
+.contact {
+  background: var(--bg-dark-gray);
+}
+
+.contact-info {
+  margin: 2rem 0;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+}
+
+.info-item h4 {
+  margin-bottom: 0.5rem;
+  color: var(--neon-cyan);
+}
+
+.info-item p {
+  margin: 0;
+}
+
+.contact-form {
+  background: var(--bg-dark);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--bg-dark-gray);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: var(--text-light);
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+@media (max-width: 968px) {
+  .section-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

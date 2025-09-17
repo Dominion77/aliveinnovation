@@ -1,0 +1,156 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.tech-visual {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.holographic-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: var(--gradient-cyan);
+  opacity: 0.1;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.floating-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(0, 243, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 243, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: float 20s infinite linear;
+}
+
+.particle-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.particle-effect::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 8px;
+  height: 8px;
+  background: var(--neon-cyan);
+  border-radius: 50%;
+  box-shadow: 
+    40px 80px 0 0 var(--neon-cyan),
+    80px 160px 0 0 var(--neon-cyan),
+    120px 40px 0 0 var(--neon-cyan),
+    160px 120px 0 0 var(--neon-cyan);
+  opacity: 0.5;
+  animation: particles 10s infinite linear;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-gray);
+  font-size: 0.875rem;
+}
+
+.indicator-line {
+  width: 1px;
+  height: 50px;
+  background: var(--gradient-cyan);
+  margin-top: 0.5rem;
+}
+
+@keyframes float {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+
+@keyframes particles {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-20px, -10px);
+  }
+}
+
+@media (max-width: 968px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero p {
+    margin: 0 auto 2.5rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
