@@ -26,7 +26,7 @@ const App: React.FC = () => {
       id: 1,
       title: 'Alive Home',
       description: 'An AI-Powered real estate platform that links buyers and renters to realtors, property owners and developers.',
-      category: 'real estate tech'
+      category: 'check it out'
     },
     {
       id: 2,

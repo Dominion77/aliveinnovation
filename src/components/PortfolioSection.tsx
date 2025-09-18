@@ -6,6 +6,10 @@ interface PortfolioSectionProps {
   portfolioItems: PortfolioItem[];
 }
 
+const handleClick = () => {
+    window.open("https://alive-home.vercel.app/", '_blank');
+  };
+
 const PortfolioSection: React.FC<PortfolioSectionProps> = ({ portfolioItems }) => {
   return (
     <section id="portfolio" className="portfolio">
@@ -19,7 +23,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ portfolioItems }) =
               <div className="card-content">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <span className="category">{item.category}</span>
+                <span className="category" onClick={handleClick}>{item.category}</span>
               </div>
               <div className="card-glow"></div>
             </div>
